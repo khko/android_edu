@@ -10,8 +10,94 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.androidedu.example.mydiary.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="Intro Activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnIntroStart"
+            android:inputType="text"
+            android:onClick="onClickedBtnIntroStart" />
+
+        <Button
+            android:text="DiaryListActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDiaryListStart"
+            android:inputType="text"
+            android:onClick="onClickedBtnDiaryListStart" />
+
+        <Button
+            android:text="DiaryViewActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDiaryViewStart"
+            android:inputType="text"
+            android:onClick="onClickedBtnDiaryViewStart" />
+
+        <Button
+            android:text="DiaryInsertActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDiaryInsertStart"
+            android:inputType="text"
+            android:onClick="onClickedBtnDiaryInsertStart" />
+
+        <Button
+            android:text="DiaryEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDiaryEditStart"
+            android:inputType="text"
+            android:onClick="onClickedBtnDiaryEditStart" />
+
+        <Button
+            android:text="CategoryListActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCategoryListStart"
+            android:inputType="text"
+            android:onClick="onClickedBtnCategoryListStart" />
+
+        <Button
+            android:text="CategoryDiaryListActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCategoryDiaryListStart"
+            android:inputType="text"
+            android:onClick="onClickedBtnCategoryDiaryListStart" />
+
+        <Button
+            android:text="CategoryAddDiaryListActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCategoryAddDiaryListStart"
+            android:inputType="text"
+            android:onClick="onClickedBtnCategoryAddDiaryListStart" />
+
+        <Button
+            android:text="CategoryPopup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPopupCategoryStart"
+            android:inputType="text"
+            android:elevation="1dp"
+            android:onClick="onClickedBtnPopupCategoryStart" />
+
+        <Button
+            android:text="CategoryInsertPopup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPopupCategoryInsertStart"
+            android:inputType="text"
+            android:onClick="onClickedBtnPopupCategoryInsertStart" />
+
+    </LinearLayout>
 </RelativeLayout>
