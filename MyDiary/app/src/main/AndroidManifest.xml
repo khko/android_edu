@@ -15,10 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditActivity"/>
-        <activity android:name=".FullscreenActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".EditActivity" />
+        <activity
+            android:name=".FullscreenActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity android:name=".ListActivity" />
     </application>
 
 </manifest>
