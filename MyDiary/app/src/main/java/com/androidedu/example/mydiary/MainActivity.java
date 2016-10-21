@@ -1,73 +1,49 @@
 package com.androidedu.example.mydiary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button btnFullScreen = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // git hub 테스트
+
+        btnFullScreen = (Button)this.findViewById(R.id.btnFullScreen);
+
+        btnFullScreen.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                onClickedBtnFullScreenStart(v);
+            }
+        });
     }
 
-    //R.id.btnCategoryAddDiaryListActivity
-    public void onClickedBtnCategoryAddDiaryListStart(View v)
+    public void onClickedBtnListStart(View v)
     {
-
+        Intent intent = new Intent(this, ListActivity.class);
+        this.startActivity(intent);
     }
 
-    //R.id.btnCategoryDiaryListStart
-    public void onClickedBtnCategoryDiaryListStart(View v)
+    public void onClickedBtnEditStart(View v)
     {
-
+        Intent intent = new Intent(this, EditActivity.class);
+        this.startActivity(intent);
     }
 
-    //R.id.btnCategoryListStart
-    public void onClickedBtnCategoryListStart(View v)
+    public void onClickedBtnFullScreenStart(View v)
     {
-
+        Intent intent = new Intent(this, FullscreenActivity.class);
+        this.startActivity(intent);
     }
 
-    //R.id.btnDiaryEditStart
-    public void onClickedBtnDiaryEditStart(View v)
-    {
-
-    }
-
-    //R.id.btnDiaryInsertStart
-    public void onClickedBtnDiaryInsertStart(View v)
-    {
-
-    }
-
-    //R.id.btnDiaryListStart
-    public void onClickedBtnDiaryListStart(View v)
-    {
-
-    }
-
-    //R.id.btnDiaryViewStart
-    public void onClickedBtnDiaryViewStart(View v)
-    {
-
-    }
-
-    //R.id.btnIntroStart
-    public void onClickedBtnIntroStart(View v)
-    {
-
-    }
-
-    //R.id.btnPopupCategoryInsertStart
-    public void onClickedBtnPopupCategoryInsertStart(View v)
-    {
-
-    }
-
-    //R.id.btnPopupCategoryStart
-    public void onClickedBtnPopupCategoryStart(View v)
+    public void onClickedBtnPopupStart(View v)
     {
 
     }
